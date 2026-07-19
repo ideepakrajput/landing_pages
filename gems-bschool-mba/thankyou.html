@@ -1,0 +1,169 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-P59M7KVD");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-M267MMF5");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gems School</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon1.png" />
+    <!-- custom CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+
+
+
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="thankyou-sec">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-P59M7KVD"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-M267MMF5"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header id="header" class="header">
+      <div class="header-absolute w-100">
+        <div class="container">
+          <div class="top-head py-2">
+            <div class="row align-items-center">
+              <div class="col-lg-4 col-md-4 col-6">
+                <div class="logo">
+                  <img loading="eager" fetchpriority="high" decoding="async" class="img-fluid" src="images/logo.png" alt="" />
+                </div>
+              </div>
+
+              <div class="col-lg-8 col-md-8 col-6 logo__right">
+                <p
+                  class="logo_text wow fadeInUp text-end"
+                  data-wow-delay="200ms"
+                >
+                  Secure your Seat for Jan 2026 Intake <br />
+                  Full Time MBA (Bangalore)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="hero-thankyou position-relative">
+      <div class="bc-img01">
+        <div class="container">
+          <div class="text-center thankyou__dv shadow">
+            <a href="#" class="navbar-brand"
+              ><img loading="eager" fetchpriority="high" decoding="async" class="img-fluid" src="images/emailimg.png"
+            /></a>
+
+            <h3 class="transparent text-red">Thank You!</h3>
+            <p class="fsize18 mb-3">
+              for your enquiry. Someone from our team will be in touch with you
+              shortly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- jQuery plugins -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      // Get stored form data
+      const storedData = localStorage.getItem("form_data");
+
+      if (storedData) {
+        const formData = JSON.parse(storedData);
+
+        // Normalize data (important for enhanced conversions)
+        const normalizedEmail = formData.email
+          ? formData.email.trim().toLowerCase()
+          : undefined;
+
+        const normalizedPhone = formData.phone
+          ? "+91" + formData.phone.replace(/\D/g, "").replace(/^91/, "")
+          : undefined;
+
+        // Push Enhanced Conversion event
+        dataLayer.push({
+          event: "enhanced_conversion",
+          enhanced_conversion_data: {
+            email: normalizedEmail,
+            phone: normalizedPhone,
+          },
+        });
+
+        // Push regular form submit event
+        dataLayer.push({
+          event: "form_submit",
+          name: formData.name,
+          email: formData.email,
+          phone: normalizedPhone,
+          course: formData.course,
+          state: formData.state,
+          city: formData.city,
+        });
+
+        // console.log("Form Submitted â†’", window.dataLayer);
+        localStorage.removeItem("form_data");
+      }
+    </script>
+  </body>
+</html>
+
+
+
+
